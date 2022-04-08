@@ -10,12 +10,13 @@ function Search({ match }) {
 	}, [])
 	return (
 		<div className='search'>
-			<div className='row'>
+
+			<div className='row' style={{ backgroundColor: 'lightgray', margin: '10px 10px' }}>
 				{
 					data && data.map(imgobj =>
-						<div className='col-md-4'>
-							<div className='card'>
-								<img className='card-img-top' src={imgobj.largeImageURL} height="250" width="260" />
+						<div className='col-md-4 my-4' >
+							<div className='card' style={{ borderRadius: '20px' }}>
+								<img className='card-img-top' src={imgobj.largeImageURL} height="250" width="260" style={{ borderTopRightRadius: '20px', borderTopLeftRadius: '20px' }} />
 								<div className='card-body'>
 									<h5 className='card-title text-center' >{imgobj.tags}</h5>
 
@@ -25,6 +26,7 @@ function Search({ match }) {
 					)
 				}
 			</div>
+
 
 
 		</div>

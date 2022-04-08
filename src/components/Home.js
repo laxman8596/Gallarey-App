@@ -14,10 +14,7 @@ const Home = () => {
 					Gallarey App
 
 				</h3>
-				<div style={{ textAlign: 'center', }}>
-					<Button variant="success" style={{ marginRight: '10px' }}> Login</Button>
-					<Button variant="success"> signup</Button>
-				</div>
+
 
 			</div>
 
@@ -28,7 +25,7 @@ const Home = () => {
 
 
 					<input type='text' placeholder='search any images ' size='' onChange={(e) => setImgname(e.target.value)} style={{ marginBottom: "10px", padding: '10px', borderRadius: '10px' }} /><br />
-					<Button type="button" class="btn btn-success btn-lg" onClick={() => imgname && history.push(`/search/${imgname}`)} variant="success" style={{}}>Search</Button>
+					<Button type="button" class="btn btn-success btn-lg" onClick={() => imgname && history.push(`/search/${imgname}`)} variant="success" style={{ width: '150px', height: '40px', borderRadius: '8px' }}>Search</Button>
 				</center>
 			</div>
 		</div>
