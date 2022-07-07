@@ -9,15 +9,15 @@ function Search({ match }) {
 		)
 	}, [])
 	return (
-		<div className='search'>
+		<section style={{}}>
 
-			<div className='row' style={{ backgroundColor: 'lightgray', margin: '10px 10px' }}>
+			<div className='row' style={{ margin: '0 10px' }}>
 				{
 					data && data.map(imgobj =>
 						<div className='col-md-4 my-4' >
-							<div className='card' style={{ borderRadius: '20px' }}>
-								<img className='card-img-top' src={imgobj.largeImageURL} height="250" width="260" style={{ borderTopRightRadius: '20px', borderTopLeftRadius: '20px' }} />
-								<div className='card-body'>
+							<div className='card' style={{ borderRadius: '10px' }}>
+								<img className='card-img-top' src={imgobj.largeImageURL} height="250" width="250" style={{ borderTopRightRadius: '10px', borderTopLeftRadius: '10px' }} />
+								<div className='card-body' style={{ backgroundColor: '#F0EBE3', borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px' }} >
 									<h5 className='card-title text-center' >{imgobj.tags}</h5>
 
 								</div>
@@ -26,10 +26,10 @@ function Search({ match }) {
 					)
 				}
 			</div>
+		</section>
 
 
 
-		</div>
 	)
 }
 
