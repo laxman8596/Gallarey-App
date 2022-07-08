@@ -20,7 +20,7 @@ function Search({ match }) {
 			<div className='gallarey'>
 				<h3 >Gallery</h3>
 			</div>
-			<div className='row ' style={{ margin: '20px 0px 2px 2px' }}>
+			<div className='row  head' style={{ margin: '28px 0px 2px 2px' }}>
 				{
 					data && data.map(imgobj =>
 						<div className='col-md-4 my-4' >
