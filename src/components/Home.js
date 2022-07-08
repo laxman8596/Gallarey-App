@@ -7,11 +7,12 @@ const Home = () => {
 	const [imgname, setImgname] = useState('');
 
 	return (
-		<div className='bgimage responsive'>
+		<section className='bgimage responsive'>
 			<nav>
 				<div className="brand">
 					<h3 style={{ color: 'white' }}>
-						Gallarey App</h3>
+						Gallery App
+					</h3>
 				</div>
 			</nav>
 
@@ -25,7 +26,7 @@ const Home = () => {
 					<Button type="button" className="btn-search" onClick={() => imgname && history.push(`/search/${imgname}`)}>Search</Button>
 				</center>
 			</div>
-		</div>
+		</section>
 	)
 }
 
